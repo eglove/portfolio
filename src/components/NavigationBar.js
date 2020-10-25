@@ -1,33 +1,32 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { NavigationContainerStyles } from '../styles/Navigation.css';
+import {
+  ExternalLinkStyle,
+  HeaderStyles,
+  PageLinkStyles,
+} from '../styles/Navigation.css';
 
 function NavigationBar() {
   return (
-    <NavigationContainerStyles>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/blog">Blog</Link>
-        </li>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/ethan-glover/"
-            rel="noreferrer"
-            target="_blank"
-          >
-            LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/eglove" rel="noreferrer" target="_blank">
-            GitHub
-          </a>
-        </li>
-      </ul>
-    </NavigationContainerStyles>
+    <HeaderStyles>
+      <PageLinkStyles>
+        <Link to="/">Home</Link>
+        <Link to="/portfolio">Portfolio</Link>
+        <Link to="/blog">Blog</Link>
+      </PageLinkStyles>
+      <ExternalLinkStyle>
+        <a
+          href="https://www.linkedin.com/in/ethan-glover/"
+          rel="noreferrer"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+        <a href="https://github.com/eglove" rel="noreferrer" target="_blank">
+          GitHub
+        </a>
+      </ExternalLinkStyle>
+    </HeaderStyles>
   );
 }
 

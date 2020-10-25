@@ -37,6 +37,11 @@ export default {
       },
     },
     {
+      name: 'imageAlt',
+      title: 'Image Alt',
+      type: 'string',
+    },
+    {
       name: 'description',
       title: 'Description',
       type: 'blockContent',

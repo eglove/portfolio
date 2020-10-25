@@ -33,6 +33,11 @@ export default {
       },
     },
     {
+      name: 'mainImageAlt',
+      title: 'Main Image Alt',
+      type: 'string',
+    },
+    {
       name: 'publishedAt',
       title: 'Published at',
       type: 'datetime',

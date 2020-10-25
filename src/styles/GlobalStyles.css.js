@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import reset from 'styled-reset';
 import Raleway from './fonts/Raleway.ttf';
 
@@ -16,19 +16,25 @@ export const GlobalStyles = createGlobalStyle`
   
   :root {
     --backgroundColor: whitesmoke;
+    --itemBackgroundColor: white;
     --fontColor: black;
     --headerColor: #2196F3;
     --headerFontColor: white;
+    --white: white;
+    --remRatio: 1.250;
+    --boxShadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     
     font-size: 16px;
   }
   
   @media (prefers-color-scheme: dark) {
     :root {
-      --backgroundColor: #2C2F33;
+      --backgroundColor: #23272A;
+      --itemBackgroundColor: #2C2F33;
       --fontColor: white;
       --headerColor: #7289DA;
       --headerFontColor: white;
+      --boxShadow: 0 3px 3px rgba(255, 255, 255, 0.2);
     }
   }
   
@@ -41,36 +47,52 @@ export const GlobalStyles = createGlobalStyle`
   }
   
   h1 {
-    font-size: 2.625rem;
-    line-height: 1.548rem;
+    font-size: 3.815rem;
+    line-height: 5.7225rem;
   }
   
   h2 {
-    font-size: 2.063rem;
-    line-height: 1.576rem;
+    font-size: 3.052rem;
+    line-height: 4.578rem;
   }
   
   h3 {
-    font-size: 1.625rem;
-    line-height: 1.615rem;
+    font-size: 2.441rem;
+    line-height: 3.6615rem;
   }
   
   h4 {
+    font-size: 1.953rem;
+    line-height: 2.9295rem;
+  }
+  
+  h5 {
+    font-size: 1.563rem;
+    line-height: 2.3445rem;
+  }
+  
+  h6 {
     font-size: 1.25rem;
-    line-height: 1.65rem;
+    line-height: 1.875rem;
   }
   
   body {
     font-size: 1rem;
-    line-height: 1.688rem;
-  }
-  
-  small {
-    font-size: 0.813rem;
-    line-height: 1.769rem;
+    line-height: 1.5rem;
   }
   
   img {
     max-width: 100%;
   }
+`;
+
+export const ItemContainerStyles = styled.div`
+  padding: 1rem;
+  margin: 1rem 0;
+  background: var(--itemBackgroundColor);
+  box-shadow: var(--boxShadow);
+  /* stylelint-disable */
+  content-visibility: auto;
+  contain-intrinsic-size: 100vh;
+  /* stylelint-enable */
 `;
