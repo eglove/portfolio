@@ -77,6 +77,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   
   body {
+    margin: 1rem 0;
     font-size: 1rem;
     line-height: 1.5rem;
   }
