@@ -92,6 +92,9 @@ export const ItemContainerStyles = styled.div`
   margin: 1rem 0;
   background: var(--itemBackgroundColor);
   box-shadow: var(--boxShadow);
+`;
+
+export const ContentVisibility = styled.div`
   /* stylelint-disable */
   content-visibility: auto;
   contain-intrinsic-size: 100vh;

@@ -10,9 +10,6 @@ import {
 } from '../../styles/PortfolioStyles.css';
 
 function SingleProject({ project }) {
-  console.clear();
-  console.log(project);
-
   const { description, ghLink, imageAlt, liveLink, name, slug } = project;
   const image = project.image.asset.fluid;
   return (

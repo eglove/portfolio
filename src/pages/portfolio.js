@@ -2,13 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import ProjectList from '../components/Portfolio/ProjectList';
+import Seo from '../components/SEO';
 
 function Portfolio({
   data: {
     projectQuery: { projects },
   },
 }) {
-  return <ProjectList projects={projects} />;
+  return (
+    <>
+      <Seo title="Portfolio" description="Projects built by Ethan Glover" />
+      <ProjectList projects={projects} />
+    </>
+  );
 }
 
 export default Portfolio;

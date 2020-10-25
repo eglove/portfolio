@@ -12,9 +12,10 @@ module.exports = {
   siteMetadata: {
     title: `EGlove`,
     siteUrl: `https://www.example.com`,
-    description: `Portfolio for Full Stack Developer Ethan Glover`,
+    description: `Ethan Glover's developer portfolio.`,
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-source-sanity',
