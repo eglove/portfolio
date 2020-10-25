@@ -13,7 +13,7 @@ export default function BlogPage({
 
 export const query = graphql`
   query PostsQuery {
-    postQuery: allSanityPost {
+    postQuery: allSanityPost(sort: { order: ASC, fields: modifiedAt }) {
       posts: nodes {
         id
         title
