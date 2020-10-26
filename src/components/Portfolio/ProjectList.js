@@ -7,7 +7,7 @@ function ProjectList({ projects }) {
   return (
     <ContentVisibility>
       {projects.map((project) => (
-        <SingleProject project={project} />
+        <SingleProject key={project.id} project={project} />
       ))}
     </ContentVisibility>
   );
