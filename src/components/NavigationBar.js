@@ -17,12 +17,16 @@ function NavigationBar() {
       <ExternalLinkStyle>
         <a
           href="https://www.linkedin.com/in/ethan-glover/"
-          rel="noreferrer"
+          rel="noopener noreferrer"
           target="_blank"
         >
           LinkedIn
         </a>
-        <a href="https://github.com/eglove" rel="noreferrer" target="_blank">
+        <a
+          href="https://github.com/eglove"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           GitHub
         </a>
       </ExternalLinkStyle>
