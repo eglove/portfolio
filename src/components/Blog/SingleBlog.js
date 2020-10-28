@@ -20,8 +20,8 @@ function SingleBlog({ post }) {
   } = post;
   const published = new Date(publishedAt).toDateString();
   const modified = new Date(modifiedAt).toDateString();
-  // const body = post.body[0].children[0].text;
   const mainImage = post.mainImage.asset.fluid;
+  console.log(body);
 
   return (
     <ItemContainerStyles>
@@ -38,7 +38,9 @@ function SingleBlog({ post }) {
       <BlogContentStyles>
         <GatsbyImage fluid={mainImage} alt={mainImageAlt} />
         {body.map((paragraph, index) => (
-          <p key={index}>{paragraph.children[0].text}</p>
+          <p key={index}>
+            {paragraph.children.map((paragraphPart) => paragraphPart.text)}
+          </p>
         ))}
       </BlogContentStyles>
     </ItemContainerStyles>

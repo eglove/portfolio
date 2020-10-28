@@ -21,7 +21,6 @@ export const GlobalStyles = createGlobalStyle`
     --headerColor: #2196F3;
     --headerFontColor: white;
     --white: white;
-    --remRatio: 1.250;
     --boxShadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     
     font-size: 16px;
