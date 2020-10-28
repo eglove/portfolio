@@ -21,7 +21,6 @@ function SingleBlog({ post }) {
   const published = new Date(publishedAt).toDateString();
   const modified = new Date(modifiedAt).toDateString();
   const mainImage = post.mainImage.asset.fluid;
-  console.log(body);
 
   return (
     <ItemContainerStyles>
