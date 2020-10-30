@@ -17,6 +17,7 @@ export default function singleBlogPage({ data: { post } }) {
 export const query = graphql`
   query($slug: String!) {
     post: sanityPost(slug: { current: { eq: $slug } }) {
+      _rawBody
       id
       title
       slug {
@@ -35,11 +36,6 @@ export const query = graphql`
       mainImageAlt
       publishedAt
       modifiedAt
-      body {
-        children {
-          text
-        }
-      }
     }
   }
 `;

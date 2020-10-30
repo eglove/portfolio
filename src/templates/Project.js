@@ -19,11 +19,7 @@ export default function Project({ data: { project } }) {
 export const query = graphql`
   query($slug: String!) {
     project: sanityProject(slug: { current: { eq: $slug } }) {
-      description {
-        children {
-          text
-        }
-      }
+      _rawDescription
       ghLink
       id
       image {

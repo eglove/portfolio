@@ -23,11 +23,7 @@ export const query = graphql`
   query ProjectsQuery {
     projectQuery: allSanityProject(sort: { order: DESC, fields: _updatedAt }) {
       projects: nodes {
-        description {
-          children {
-            text
-          }
-        }
+        _rawDescription
         ghLink
         id
         image {

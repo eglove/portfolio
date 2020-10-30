@@ -8,9 +8,11 @@ import {
   IconStyles,
   ProjectContainerStyles,
 } from '../../styles/PortfolioStyles.css';
+import PortableText from '../portableText';
 
 function SingleProject({ project }) {
-  const { description, ghLink, imageAlt, liveLink, name, slug } = project;
+  const { _rawDescription, ghLink, imageAlt, liveLink, name, slug } = project;
+  console.log(project);
   const image = project.image.asset.fluid;
   return (
     <ItemContainerStyles>
@@ -34,9 +36,7 @@ function SingleProject({ project }) {
             )}
           </IconStyles>
           <Link to={`/portfolio/${slug.current}`}>Permalink</Link>
-          {description.map((paragraph, index) => (
-            <p key={index}>{paragraph.children[0].text}</p>
-          ))}
+          <PortableText blocks={_rawDescription} />
         </div>
         <div>
           <GatsbyImage fluid={image} alt={imageAlt} />

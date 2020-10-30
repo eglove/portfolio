@@ -13,7 +13,6 @@ function SingleBlog({ post }) {
   const {
     _rawBody,
     author,
-    body,
     mainImageAlt,
     modifiedAt,
     publishedAt,

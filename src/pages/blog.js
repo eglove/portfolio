@@ -40,11 +40,6 @@ export const query = graphql`
         mainImageAlt
         publishedAt
         modifiedAt
-        body {
-          children {
-            text
-          }
-        }
       }
     }
   }
