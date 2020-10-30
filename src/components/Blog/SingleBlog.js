@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import GatsbyImage from 'gatsby-image';
+import PortableText from '../portableText';
 import {
   BlogContentStyles,
   BlogMetadataStyles,
@@ -9,7 +10,9 @@ import {
 import { ItemContainerStyles } from '../../styles/GlobalStyles.css';
 
 function SingleBlog({ post }) {
+  console.log(post);
   const {
+    _rawBody,
     author,
     body,
     mainImageAlt,
@@ -36,11 +39,7 @@ function SingleBlog({ post }) {
       </BlogMetadataStyles>
       <BlogContentStyles>
         <GatsbyImage fluid={mainImage} alt={mainImageAlt} />
-        {body.map((paragraph, index) => (
-          <p key={index}>
-            {paragraph.children.map((paragraphPart) => paragraphPart.text)}
-          </p>
-        ))}
+        <PortableText blocks={_rawBody} />
       </BlogContentStyles>
     </ItemContainerStyles>
   );

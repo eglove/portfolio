@@ -21,6 +21,7 @@ export const query = graphql`
   query PostsQuery {
     postQuery: allSanityPost(sort: { order: ASC, fields: modifiedAt }) {
       posts: nodes {
+        _rawBody
         id
         title
         slug {
