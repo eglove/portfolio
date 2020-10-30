@@ -9,7 +9,6 @@ export default function BlogPage({
     postQuery: { posts },
   },
 }) {
-  console.log(posts);
   return (
     <>
       <Seo title="Blog" description="Ethan Glover blog." />
