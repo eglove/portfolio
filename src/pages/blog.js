@@ -9,6 +9,7 @@ export default function BlogPage({
     postQuery: { posts },
   },
 }) {
+  console.log(posts);
   return (
     <>
       <Seo title="Blog" description="Ethan Glover blog." />
@@ -19,7 +20,7 @@ export default function BlogPage({
 
 export const query = graphql`
   query PostsQuery {
-    postQuery: allSanityPost(sort: { order: ASC, fields: modifiedAt }) {
+    postQuery: allSanityPost(sort: { order: DESC, fields: _updatedAt }) {
       posts: nodes {
         _rawBody
         id

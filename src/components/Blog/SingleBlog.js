@@ -10,7 +10,6 @@ import {
 import { ItemContainerStyles } from '../../styles/GlobalStyles.css';
 
 function SingleBlog({ post }) {
-  console.log(post);
   const {
     _rawBody,
     author,

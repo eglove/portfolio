@@ -29,6 +29,16 @@ export default {
       type: 'url',
     },
     {
+      name: 'publishedAt',
+      tile: 'Published At',
+      type: 'datetime',
+    },
+    {
+      name: 'modifiedAt',
+      tile: 'Modified At',
+      type: 'datetime',
+    },
+    {
       name: 'image',
       title: 'Image',
       type: 'image',

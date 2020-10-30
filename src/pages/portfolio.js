@@ -21,7 +21,7 @@ export default Portfolio;
 
 export const query = graphql`
   query ProjectsQuery {
-    projectQuery: allSanityProject(sort: { order: ASC, fields: _updatedAt }) {
+    projectQuery: allSanityProject(sort: { order: DESC, fields: _updatedAt }) {
       projects: nodes {
         description {
           children {

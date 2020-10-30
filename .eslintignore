@@ -1,0 +1,4 @@
+.cache
+public
+sanity-backend/dist
+**/node_modules
