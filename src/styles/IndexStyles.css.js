@@ -8,15 +8,10 @@ export const IndexContainerStyles = styled.div`
 export const IconStyles = styled.div`
   display: inline-flex;
   flex-wrap: wrap;
-  margin-top: 1rem;
+  margin: 1rem;
+  gap: 1rem;
 
-  svg {
-    width: 50px;
-    height: 50px;
-    color: var(--fontColor);
-  }
-
-  svg + svg {
+  img + img {
     margin-left: 1rem;
   }
 `;

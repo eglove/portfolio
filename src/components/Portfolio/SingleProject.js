@@ -12,7 +12,6 @@ import PortableText from '../portableText';
 
 function SingleProject({ project }) {
   const { _rawDescription, ghLink, imageAlt, liveLink, name, slug } = project;
-  console.log(project);
   const image = project.image.asset.fluid;
   return (
     <ItemContainerStyles>

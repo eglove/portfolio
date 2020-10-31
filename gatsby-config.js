@@ -10,7 +10,7 @@ dotenv.config({ path: '.env' });
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `EGlove`,
+    title: `EthanG`,
     siteUrl: `https://www.example.com`,
     description: `Ethan Glover's developer portfolio.`,
   },
@@ -24,6 +24,13 @@ module.exports = {
         dataset: 'production',
         watchMode: true,
         token: process.env.SANITY_TOKEN,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/assets/images/`,
       },
     },
   ],

@@ -18,6 +18,7 @@ import {
 import { ItemContainerStyles } from '../styles/GlobalStyles.css';
 import { IconStyles, IndexContainerStyles } from '../styles/IndexStyles.css';
 import Seo from '../components/SEO';
+import RandomLogo from '../components/RandomLogo';
 
 export default function HomePage() {
   return (
@@ -29,20 +30,7 @@ export default function HomePage() {
         <h3>What kind of developer?</h3>
         <p>Well.. I've worked with these technologies...</p>
         <IconStyles>
-          <SiJavascript />
-          <FaHtml5 />
-          <FaCss3Alt />
-          <FaReact />
-          <SiGatsby />
-          <SiNextDotJs />
-          <SiGraphql />
-          <SiApollographql />
-          <FaVuejs />
-          <FaPython />
-          <FaJava />
-          <SiSpring />
-          <SiPhp />
-          <SiJest />
+          <RandomLogo />
         </IconStyles>
       </IndexContainerStyles>
     </ItemContainerStyles>
