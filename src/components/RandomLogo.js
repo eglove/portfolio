@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import GatsbyImage from 'gatsby-image';
 
-function RandomLogo(props) {
+function RandomLogo() {
   const data = useStaticQuery(graphql`
     {
       imageQuery: allFile(
