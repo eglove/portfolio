@@ -104,6 +104,6 @@ export const ItemContainerStyles = styled.div`
 export const ContentVisibility = styled.div`
   /* stylelint-disable */
   content-visibility: auto;
-  contain-intrinsic-size: 100vh;
+  contain-intrinsic-size: 1000px 1000px;
   /* stylelint-enable */
 `;
