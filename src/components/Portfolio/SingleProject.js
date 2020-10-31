@@ -20,14 +20,24 @@ function SingleProject({ project }) {
           <h1>{name}</h1>
           <IconStyles>
             {ghLink ? (
-              <a href={ghLink} rel="noreferrer" target="_blank">
+              <a
+                href={ghLink}
+                name={`${name} GitHub`}
+                rel="noreferrer"
+                target="_blank"
+              >
                 <FaGithub />
               </a>
             ) : (
               ''
             )}
             {liveLink ? (
-              <a href={liveLink} rel="noreferrer" target="_blank">
+              <a
+                href={liveLink}
+                name={`${name} Live`}
+                rel="noreferrer"
+                target="_blank"
+              >
                 <FaGlobeAmericas />
               </a>
             ) : (
