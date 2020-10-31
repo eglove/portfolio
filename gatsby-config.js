@@ -17,6 +17,19 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
+    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `GatsbyJS`,
+        short_name: `GatsbyJS`,
+        start_url: `/`,
+        background_color: `#FFFFFF`,
+        theme_color: `#066FC3`,
+        display: `standalone`,
+        icon: `src/assets/images/logo.png`,
+      },
+    },
     {
       resolve: 'gatsby-source-sanity',
       options: {
