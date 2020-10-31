@@ -21,8 +21,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `GatsbyJS`,
-        short_name: `GatsbyJS`,
+        name: `EthanG`,
+        short_name: `EthanG`,
         start_url: `/`,
         background_color: `#FFFFFF`,
         theme_color: `#066FC3`,
