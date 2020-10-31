@@ -18,7 +18,7 @@ export const GlobalStyles = createGlobalStyle`
     --backgroundColor: whitesmoke;
     --itemBackgroundColor: white;
     --fontColor: black;
-    --headerColor: #2196F3;
+    --headerColor: #066FC3;
     --headerFontColor: white;
     --white: white;
     --boxShadow: 0 3px 3px rgba(0, 0, 0, 0.2);

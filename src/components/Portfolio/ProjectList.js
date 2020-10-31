@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import SingleProject from './SingleProject';
+import loadable from '@loadable/component';
 import { ContentVisibility } from '../../styles/GlobalStyles.css';
+
+const SingleProject = loadable(() => import('./SingleProject'));
 
 function ProjectList({ projects }) {
   return (

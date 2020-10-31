@@ -1,6 +1,8 @@
 import React from 'react';
+import loadable from '@loadable/component';
 import { graphql, useStaticQuery } from 'gatsby';
-import GatsbyImage from 'gatsby-image';
+
+const SingleLogo = loadable(() => import('./SingleLogo'));
 
 function RandomLogo() {
   const data = useStaticQuery(graphql`
@@ -40,13 +42,7 @@ function RandomLogo() {
   return (
     <>
       {images.map((image, index) => (
-        <img
-          key={index}
-          alt={image.name}
-          src={`${image.publicURL}`}
-          width="100"
-          height="100"
-        />
+        <SingleLogo key={index} image={image} />
       ))}
     </>
   );

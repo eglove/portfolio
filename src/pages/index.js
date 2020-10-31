@@ -1,24 +1,8 @@
 import React from 'react';
-import {
-  FaCss3Alt,
-  FaHtml5,
-  FaJava,
-  FaPython,
-  FaReact,
-  FaVuejs,
-  SiApollographql,
-  SiGatsby,
-  SiGraphql,
-  SiJavascript,
-  SiJest,
-  SiNextDotJs,
-  SiPhp,
-  SiSpring,
-} from 'react-icons/all';
 import { ItemContainerStyles } from '../styles/GlobalStyles.css';
 import { IconStyles, IndexContainerStyles } from '../styles/IndexStyles.css';
 import Seo from '../components/SEO';
-import RandomLogo from '../components/RandomLogo';
+import RandomLogo from '../components/HomePageLogos/RandomLogo';
 
 export default function HomePage() {
   return (
