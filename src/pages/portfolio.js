@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import ProjectList from '../components/Portfolio/ProjectList';
 import Seo from '../components/SEO';
+import { PageWrapper } from '../styles/PageStyles';
 
 function Portfolio({
   data: {
@@ -10,10 +11,10 @@ function Portfolio({
   },
 }) {
   return (
-    <>
+    <PageWrapper>
       <Seo title="Portfolio" description="Projects built by Ethan Glover" />
       <ProjectList projects={projects} />
-    </>
+    </PageWrapper>
   );
 }
 

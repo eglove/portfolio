@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import BlogList from '../components/Blog/BlogList';
 import Seo from '../components/SEO';
+import { PageWrapper } from '../styles/PageStyles';
 
 export default function BlogPage({
   data: {
@@ -10,10 +11,10 @@ export default function BlogPage({
   },
 }) {
   return (
-    <>
+    <PageWrapper>
       <Seo title="Blog" description="Ethan Glover blog." />
       <BlogList posts={posts} />
-    </>
+    </PageWrapper>
   );
 }
 
