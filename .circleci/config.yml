@@ -1,7 +1,12 @@
 version: 2.1
-orbs:
-  node: circleci/node@3.0.0
-workflows:
-  node-tests:
-    jobs:
-      - node/test
+jobs:
+  build:
+    docker:
+      - image: circleci/node
+    working_directory: ~/
+    steps:
+      - checkout
+      - run: yarn install
+      - run: yarn build
+      - run: sudio yarn global add @lhci/cli
+      - run: lhci autorun
