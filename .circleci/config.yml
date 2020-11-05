@@ -9,4 +9,6 @@ jobs:
       - run: yarn install
       - run: yarn build
       - run: sudo yarn global add @lhci/cli
+      - browser-tools/installchrome
+      - browser-tools/install-chromedriver
       - run: lhci autorun
