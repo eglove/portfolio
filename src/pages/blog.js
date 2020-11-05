@@ -1,9 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import loadable from '@loadable/component';
 import { graphql } from 'gatsby';
-import BlogList from '../components/Blog/BlogList';
 import Seo from '../components/SEO';
 import { PageWrapper } from '../styles/PageStyles';
+
+const BlogList = loadable(() => import('../components/Blog/BlogList'));
 
 export default function BlogPage({
   data: {

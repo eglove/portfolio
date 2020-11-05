@@ -8,6 +8,7 @@ export const GlobalStyles = createGlobalStyle`
   /* stylelint-enable */
   
   @font-face {
+    font-display: swap;
     font-family: Raleway;
     font-style: normal;
     font-weight: 500;

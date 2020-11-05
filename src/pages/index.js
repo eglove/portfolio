@@ -1,8 +1,12 @@
 import React from 'react';
+import loadable from '@loadable/component';
 import { ItemContainerStyles } from '../styles/GlobalStyles.css';
 import { IconStyles, IndexContainerStyles } from '../styles/IndexStyles.css';
 import Seo from '../components/SEO';
-import RandomLogo from '../components/HomePageLogos/RandomLogo';
+
+const RandomLogo = loadable(() =>
+  import('../components/HomePageLogos/RandomLogo')
+);
 
 export default function HomePage() {
   return (
