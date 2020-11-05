@@ -3,7 +3,7 @@ jobs:
   build:
     docker:
       - image: circleci/node
-    working_directory: ~/
+    working_directory: ~/portfolio
     steps:
       - checkout
       - run: yarn install
