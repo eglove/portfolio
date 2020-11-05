@@ -12,3 +12,5 @@ jobs:
       - browser-tools/installchrome
       - browser-tools/install-chromedriver
       - run: lhci autorun
+orbs:
+  browser-tools: circleci/browser-tools
