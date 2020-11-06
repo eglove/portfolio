@@ -18,12 +18,17 @@
     "@sanity/components": "^2.0.9",
     "@sanity/core": "^2.0.9",
     "@sanity/default-layout": "^2.0.9",
-    "@sanity/default-login": "^2.0.5",
-    "@sanity/desk-tool": "^2.0.8",
-    "@sanity/vision": "^2.0.5",
+    "@sanity/default-login": "^2.0.9",
+    "@sanity/desk-tool": "^2.0.9",
+    "@sanity/vision": "^2.0.9",
     "prop-types": "^15.6",
     "react": "^16.2",
     "react-dom": "^16.2"
+  },
+  "resolutions": {
+    "mem": "^4.0.0",
+    "node-fetch": "^2.6.1",
+    "yargs-parser": "^18.1.2"
   },
   "devDependencies": {}
 }
