@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import loadable from '@loadable/component';
+import NavigationBar from './NavigationBar';
 import { GlobalStyles } from '../styles/GlobalStyles.css';
-
-const NavigationBar = loadable(() => import('./NavigationBar'));
 
 function Layout({ children }) {
   return (
