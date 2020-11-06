@@ -2,17 +2,19 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import GatsbyImage from 'gatsby-image';
-import { FaGithub, FaGlobeAmericas } from 'react-icons/all';
 import { ItemContainerStyles } from '../../styles/GlobalStyles.css';
 import {
   IconStyles,
   ProjectContainerStyles,
 } from '../../styles/PortfolioStyles.css';
 import PortableText from '../portableText';
+import GitHubLogo from './GitHubLogo';
+import GlobeLogo from './GlobeLogo';
 
 function SingleProject({ project }) {
   const { _rawDescription, ghLink, imageAlt, liveLink, name, slug } = project;
   const image = project.image.asset.fluid;
+
   return (
     <ItemContainerStyles>
       <ProjectContainerStyles>
@@ -20,26 +22,12 @@ function SingleProject({ project }) {
           <h1>{name}</h1>
           <IconStyles>
             {ghLink ? (
-              <a
-                href={ghLink}
-                name={`${name} GitHub`}
-                rel="noreferrer"
-                target="_blank"
-              >
-                <FaGithub />
-              </a>
+              <GitHubLogo ghLink={ghLink} urlName={`${name} GitHub`} />
             ) : (
               ''
             )}
             {liveLink ? (
-              <a
-                href={liveLink}
-                name={`${name} Live`}
-                rel="noreferrer"
-                target="_blank"
-              >
-                <FaGlobeAmericas />
-              </a>
+              <GlobeLogo liveLink={liveLink} urlName={`${name} Live`} />
             ) : (
               ''
             )}
