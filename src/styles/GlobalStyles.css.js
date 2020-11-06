@@ -24,7 +24,7 @@ export const GlobalStyles = createGlobalStyle`
     --white: white;
     --boxShadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     
-    font-size: 16px;
+    font-size: calc(12px + 0.2vw);
   }
   
   @media (prefers-color-scheme: dark) {

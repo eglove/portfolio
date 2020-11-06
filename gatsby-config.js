@@ -18,7 +18,12 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sitemap',
-    `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        debug: false,
+      },
+    },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
