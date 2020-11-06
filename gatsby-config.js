@@ -11,13 +11,22 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `EthanG`,
-    siteUrl: `https://www.example.com`,
+    siteUrl: `https://ethang.dev/`,
     description: `Ethan Glover's developer portfolio.`,
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
+    'gatsby-plugin-sitemap',
     `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://ethang.dev/',
+        sitemap: 'https://ethang.dev/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
+      },
+    },
     {
       resolve: 'gatsby-source-sanity',
       options: {
