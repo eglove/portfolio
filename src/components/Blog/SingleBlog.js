@@ -2,12 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import GatsbyImage from 'gatsby-image';
-import PortableText from '../portableText';
+import loadable from '@loadable/component';
 import {
   BlogContentStyles,
   BlogMetadataStyles,
 } from '../../styles/BlogStyles.css';
 import { ItemContainerStyles } from '../../styles/GlobalStyles.css';
+
+const PortableText = loadable(() => import('../portableText'));
 
 function SingleBlog({ post }) {
   const {

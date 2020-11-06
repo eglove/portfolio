@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Seo from '../components/SEO';
+import loadable from '@loadable/component';
 import { ItemContainerStyles } from '../styles/GlobalStyles.css';
 import { PageWrapper } from '../styles/PageStyles';
+
+const Seo = loadable(() => import('../components/SEO'));
 
 export default function FourOhFourPage() {
   return (

@@ -2,11 +2,11 @@ import React from 'react';
 import loadable from '@loadable/component';
 import { ItemContainerStyles } from '../styles/GlobalStyles.css';
 import { IconStyles, IndexContainerStyles } from '../styles/IndexStyles.css';
-import Seo from '../components/SEO';
 
 const RandomLogo = loadable(() =>
   import('../components/HomePageLogos/RandomLogo')
 );
+const Seo = loadable(() => import('../components/SEO'));
 
 export default function HomePage() {
   return (

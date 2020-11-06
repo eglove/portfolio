@@ -2,14 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import GatsbyImage from 'gatsby-image';
+import loadable from '@loadable/component';
 import { ItemContainerStyles } from '../../styles/GlobalStyles.css';
 import {
   IconStyles,
   ProjectContainerStyles,
 } from '../../styles/PortfolioStyles.css';
-import PortableText from '../portableText';
-import GitHubLogo from './GitHubLogo';
-import GlobeLogo from './GlobeLogo';
+
+const PortableText = loadable(() => import('../portableText'));
+const GitHubLogo = loadable(() => import('./GitHubLogo'));
+const GlobeLogo = loadable(() => import('./GlobeLogo'));
 
 function SingleProject({ project }) {
   const { _rawDescription, ghLink, imageAlt, liveLink, name, slug } = project;

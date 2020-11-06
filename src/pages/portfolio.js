@@ -2,12 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import loadable from '@loadable/component';
-import Seo from '../components/SEO';
 import { PageWrapper } from '../styles/PageStyles';
 
 const ProjectList = loadable(() =>
   import('../components/Portfolio/ProjectList')
 );
+const Seo = loadable(() => import('../components/SEO'));
 
 function Portfolio({
   data: {
