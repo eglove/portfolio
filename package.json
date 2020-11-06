@@ -1,8 +1,22 @@
 {
   "name": "eglove-portfolio",
-  "description": "",
-  "version": "0.1.0",
+  "homepage": "https://ethang.dev/",
+  "author": {
+    "email": "hello@ethang.email",
+    "url": "https://ethang.dev/",
+    "name": "Ethan Glover"
+  },
+  "description": "Ethan Glover's personal website.",
+  "version": "1.0.0",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eglove/portfolio"
+  },
+  "bugs": {
+    "email": "hello@ethang.email",
+    "url": "https://github.com/eglove/portfolio/issues"
+  },
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
