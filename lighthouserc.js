@@ -10,17 +10,6 @@ module.exports = {
         'categories:bestPractices': ['error', { minScore: 1 }],
         'categories:seo': ['error', { minScore: 1 }],
       },
-      assertMatrix: [
-        {
-          matchingUrlPattern: '/404.html',
-          assertions: {
-            'categories:performance': 'off',
-            'categories:accessibility': 'off',
-            'categories:bestPractices': 'off',
-            'categories:seo': 'off',
-          },
-        },
-      ],
     },
   },
 };
