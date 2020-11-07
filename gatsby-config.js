@@ -15,6 +15,7 @@ module.exports = {
     description: `Ethan Glover's developer portfolio.`,
   },
   plugins: [
+    `gatsby-plugin-preact`,
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     'gatsby-plugin-sitemap',

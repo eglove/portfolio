@@ -38,7 +38,6 @@ function SingleBlog({ post }) {
         </div>
       </BlogMetadataStyles>
       <BlogContentStyles>
-        <GatsbyImage fluid={mainImage} alt={mainImageAlt} />
         <PortableText blocks={_rawBody} />
       </BlogContentStyles>
     </ItemContainerStyles>
