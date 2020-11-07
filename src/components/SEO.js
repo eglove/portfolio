@@ -104,6 +104,8 @@ function Seo({ children, location, description, title, image }) {
         key="ogsitename"
       />
       <meta property="og:description" content={description} key="ogdesc" />
+
+      <meta name="monetization" content="$ilp.uphold.com/XqPZ8mnNyprk" />
       {children}
     </Helmet>
   );
