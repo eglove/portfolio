@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
-import GatsbyImage from 'gatsby-image';
 import loadable from '@loadable/component';
 import {
   BlogContentStyles,
@@ -12,18 +11,9 @@ import { ItemContainerStyles } from '../../styles/GlobalStyles.css';
 const PortableText = loadable(() => import('../portableText'));
 
 function SingleBlog({ post }) {
-  const {
-    _rawBody,
-    author,
-    mainImageAlt,
-    modifiedAt,
-    publishedAt,
-    slug,
-    title,
-  } = post;
+  const { _rawBody, author, modifiedAt, publishedAt, slug, title } = post;
   const published = new Date(publishedAt).toDateString();
   const modified = new Date(modifiedAt).toDateString();
-  const mainImage = post.mainImage.asset.fluid;
 
   return (
     <ItemContainerStyles>

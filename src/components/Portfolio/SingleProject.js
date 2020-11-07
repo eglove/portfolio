@@ -38,7 +38,7 @@ function SingleProject({ project }) {
           <PortableText blocks={_rawDescription} />
         </div>
         <div>
-          <GatsbyImage fadeIn="false" fluid={image} alt={imageAlt} />
+          <GatsbyImage fadeIn={false} fluid={image} alt={imageAlt} />
         </div>
       </ProjectContainerStyles>
     </ItemContainerStyles>

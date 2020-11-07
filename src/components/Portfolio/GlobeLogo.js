@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { graphql, useStaticQuery } from 'gatsby';
+import { TapTarget } from '../../styles/GlobalStyles.css';
 
 function GitHubLogo({ liveLink, urlName }) {
   const globeLogo = useStaticQuery(graphql`
@@ -14,14 +15,14 @@ function GitHubLogo({ liveLink, urlName }) {
   const { publicURL, name } = globeLogo.query;
 
   return (
-    <a
+    <TapTarget
       href={liveLink}
       name={`${urlName} GitHub`}
       rel="noreferrer"
       target="_blank"
     >
       <img width="50" height="50" src={publicURL} alt={name} />
-    </a>
+    </TapTarget>
   );
 }
 

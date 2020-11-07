@@ -95,6 +95,12 @@ export const GlobalStyles = createGlobalStyle`
   }
 `;
 
+export const TapTarget = styled.a`
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+`;
+
 export const ItemContainerStyles = styled.div`
   padding: 1rem;
   margin: 1rem 0;

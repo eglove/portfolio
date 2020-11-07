@@ -10,6 +10,8 @@ export const ProjectContainerStyles = styled.div`
 `;
 
 export const IconStyles = styled.div`
+  margin-bottom: 1rem;
+
   a {
     color: var(--headerColor);
   }
@@ -20,10 +22,5 @@ export const IconStyles = styled.div`
 
   a:visited {
     color: var(--headerColor);
-  }
-
-  svg {
-    width: 30px;
-    height: 30px;
   }
 `;
