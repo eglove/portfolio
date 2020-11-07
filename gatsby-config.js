@@ -58,5 +58,6 @@ module.exports = {
         defaultSizes: 'gzip',
       },
     },
+    'gatsby-plugin-no-javascript',
   ],
 };
