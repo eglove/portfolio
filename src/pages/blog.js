@@ -33,13 +33,6 @@ export const query = graphql`
         author {
           name
         }
-        mainImage {
-          asset {
-            fluid(maxWidth: 500) {
-              ...GatsbySanityImageFluid
-            }
-          }
-        }
         mainImageAlt
         publishedAt
         modifiedAt

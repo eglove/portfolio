@@ -17,8 +17,13 @@ module.exports = {
   plugins: [
     `gatsby-plugin-preact`,
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-styled-components',
     'gatsby-plugin-sitemap',
+    {
+      resolve: 'gatsby-plugin-styled-components',
+      options: {
+        pure: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-offline`,
       options: {

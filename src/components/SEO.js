@@ -15,7 +15,7 @@ function Seo({ children, location, description, title, image }) {
     }
   `);
   return (
-    <Helmet titleTemplate={`%s - ${site.siteMetadata.title}`}>
+    <Helmet titleTemplate={`%s - ${site.siteMetadata.title}`} defer={false}>
       <html lang="en" />
       <title>{title}</title>
       <link
