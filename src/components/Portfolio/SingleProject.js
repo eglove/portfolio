@@ -18,10 +18,10 @@ function SingleProject({ project }) {
   const image = project.image.asset.fluid;
 
   return (
-    <ItemContainerStyles>
+    <ItemContainerStyles className="h-entry">
       <ProjectContainerStyles>
         <div>
-          <h1>{name}</h1>
+          <h1 className="p-name">{name}</h1>
           <IconStyles>
             {ghLink ? (
               <GitHubLogo ghLink={ghLink} urlName={`${name} GitHub`} />
@@ -34,8 +34,10 @@ function SingleProject({ project }) {
               ''
             )}
           </IconStyles>
-          <Link to={`/portfolio/${slug.current}`}>Permalink</Link>
-          <PortableText blocks={_rawDescription} />
+          <Link className="u-url" to={`/portfolio/${slug.current}`}>
+            Permalink
+          </Link>
+          <PortableText blocks={_rawDescription} className="e-content" />
         </div>
         <div>
           <GatsbyImage fadeIn={false} fluid={image} alt={imageAlt} />
