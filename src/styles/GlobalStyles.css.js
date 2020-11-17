@@ -93,6 +93,11 @@ export const GlobalStyles = createGlobalStyle`
   img {
     max-width: 100%;
   }
+  
+  blockquote {
+    padding: 0.5em 10px;
+    margin: 1.5em 10px;
+  }
 `;
 
 export const TapTarget = styled.a`
