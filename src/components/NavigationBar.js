@@ -10,8 +10,8 @@ function NavigationBar() {
   return (
     <HeaderStyles>
       <PageLinkStyles>
-        <Link to="/" rel="me">
-          Home
+        <Link to="/" rel="me" className="h-card">
+          EthanG
         </Link>
         <Link to="/portfolio" rel="me">
           Portfolio
