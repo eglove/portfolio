@@ -19,6 +19,12 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sitemap',
     {
+      resolve: 'gatsby-plugin-netlify-headers',
+      options: {
+        allPageHeaders: ['Keep-Alive: timeout=5, max=1000'],
+      },
+    },
+    {
       resolve: 'gatsby-plugin-styled-components',
       options: {
         pure: true,
