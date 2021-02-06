@@ -3,14 +3,21 @@ import PropTypes from 'prop-types';
 import { CoursesGrid } from '../../styles/CoursesStyles.css';
 
 function SingleCourse({ course }) {
-  const { _id, status, logo, title, length } = course;
+  const { status, logo, title, url, length } = course;
   return (
-    <CoursesGrid>
-      <div>Status</div>
-      <div>Logo</div>
-      <div>Name</div>
-      <div>Length</div>
-    </CoursesGrid>
+    <>
+      <CoursesGrid>
+        <div>{status === 'complete' ? `✅` : `⬜`}</div>
+        <div>{logo}</div>
+        <div>
+          <a href={url} target="_blank" rel="noreferrer">
+            {title}
+          </a>
+        </div>
+        <div>{length}</div>
+      </CoursesGrid>
+      <hr />
+    </>
   );
 }
 

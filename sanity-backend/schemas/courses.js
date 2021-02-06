@@ -20,6 +20,11 @@ export default {
       type: 'text',
     },
     {
+      name: 'url',
+      title: 'URL',
+      type: 'text',
+    },
+    {
       name: 'length',
       title: 'Length',
       type: 'text',

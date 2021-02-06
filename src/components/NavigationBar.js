@@ -19,6 +19,7 @@ function NavigationBar() {
         <Link to="/blog" rel="me">
           Blog
         </Link>
+        <Link to="/courses">Recommended Courses</Link>
       </PageLinkStyles>
       <ExternalLinkStyle>
         <a href="https://www.linkedin.com/in/ethan-glover/" rel="me">
