@@ -97,7 +97,7 @@ export const courses = [
   {
     status: 'complete',
     logo: 'wesbos',
-    title: 'Fullstack Advance React & GraphQL',
+    title: 'Fullstack Advanced React & GraphQL',
     url: 'https://advancedreact.com/',
     length: '18 hrs',
   },
