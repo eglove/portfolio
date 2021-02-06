@@ -1,7 +1,7 @@
 export const courses = [
   {
     status: 'complete',
-    logo: 'ZTM',
+    logo: 'ztm',
     title: 'Learning to Learn',
     url:
       'https://academy.zerotomastery.io/p/learning-to-learn-efficient-learning-zero-to-mastery-blueprint',
@@ -9,14 +9,14 @@ export const courses = [
   },
   {
     status: 'inProgress',
-    logo: 'TreeHouse',
+    logo: 'treehouse',
     title: 'PHP TechDegree',
     url: 'https://teamtreehouse.com/techdegree/php-development',
     length: '143.5 hrs',
   },
   {
     status: 'complete',
-    logo: 'ZTM',
+    logo: 'ztm',
     title: 'Complete Web Developer',
     url:
       'https://academy.zerotomastery.io/p/complete-web-developer-zero-to-mastery',
@@ -24,56 +24,56 @@ export const courses = [
   },
   {
     status: 'complete',
-    logo: 'WB',
+    logo: 'wesbos',
     title: 'Learn Redux',
     url: 'https://learnredux.com/',
     length: '2.5 hrs',
   },
   {
     status: 'complete',
-    logo: 'WB',
+    logo: 'wesbos',
     title: 'Learn Node',
     url: 'https://learnnode.com/',
     length: '9.5 hrs',
   },
   {
     status: 'complete',
-    logo: 'ZTM',
+    logo: 'ztm',
     title: 'JavaScript - The Advanced Concepts',
     url: 'https://academy.zerotomastery.io/p/advanced-javascript-concepts',
     length: '25 hrs',
   },
   {
     status: 'complete',
-    logo: 'ZTM',
+    logo: 'ztm',
     title: 'Complete Web & Mobile Designer',
     url: 'https://academy.zerotomastery.io/p/complete-web-and-mobile-designer',
     length: '26 hrs',
   },
   {
     status: 'complete',
-    logo: 'WB',
+    logo: 'wesbos',
     title: 'What the Flexbox?',
     url: 'https://flexbox.io/',
     length: '2.5 hrs',
   },
   {
     status: 'complete',
-    logo: 'WB',
+    logo: 'wesbos',
     title: 'CSS Grid',
     url: 'https://cssgrid.io/',
     length: '4 hrs',
   },
   {
     status: 'complete',
-    logo: 'ZTM',
+    logo: 'ztm',
     title: 'JavaScript Web Projects',
     url: 'https://academy.zerotomastery.io/p/javascript-projects',
     length: '33 hrs',
   },
   {
     status: 'complete',
-    logo: 'ZTM',
+    logo: 'ztm',
     title: 'Data Structures + Algorithms',
     url:
       'https://academy.zerotomastery.io/p/master-the-coding-interview-data-structures-algorithms',
@@ -81,7 +81,7 @@ export const courses = [
   },
   {
     status: 'complete',
-    logo: 'ZTM',
+    logo: 'ztm',
     title: 'Complete React Developer',
     url:
       'https://academy.zerotomastery.io/p/complete-react-developer-redux-hooks-graphql-zero-to-mastery',
@@ -89,21 +89,21 @@ export const courses = [
   },
   {
     status: 'complete',
-    logo: 'WB',
+    logo: 'wesbos',
     title: 'Master Gatsby',
     url: 'https://mastergatsby.com/',
     length: '12 hrs',
   },
   {
     status: 'complete',
-    logo: 'WB',
+    logo: 'wesbos',
     title: 'Fullstack Advance React & GraphQL',
     url: 'https://advancedreact.com/',
     length: '18 hrs',
   },
   {
     status: 'complete',
-    logo: 'ZTM',
+    logo: 'ztm',
     title: 'Complete Junior to Senior Web Developer Roadmap',
     url:
       'https://academy.zerotomastery.io/p/the-complete-junior-to-senior-web-developer-roadmap',
@@ -113,43 +113,43 @@ export const courses = [
 
 export const otherCourses = [
   {
-    logo: 'Udemy',
+    logo: 'udemy',
     title: 'Postman: The Complete Guide - REST API Testing',
     url: 'https://www.udemy.com/course/postman-the-complete-guide/',
     length: '13.5 hrs',
   },
   {
-    logo: 'WB',
+    logo: 'wesbos',
     title: 'FullStack Advanced React & GraphQL (2021 Update)',
     url: 'https://advancedreact.com/',
     length: '18 hrs',
   },
   {
-    logo: 'ZTM',
+    logo: 'ztm',
     title: 'Complete React Native',
     url: 'https://academy.zerotomastery.io/p/learn-react-native',
     length: '? hrs',
   },
   {
-    logo: 'Educative',
+    logo: 'educative',
     title: 'Grokking Data Science',
     url: 'https://www.educative.io/courses/grokking-data-science',
     length: '10 hrs',
   },
   {
-    logo: 'RealToughCandy',
+    logo: 'rtc',
     title: 'RealToughCandy',
     url: 'https://realtoughcandy.io/',
     length: '-',
   },
   {
-    logo: 'AlgoExpert',
+    logo: 'algoexpert',
     title: 'AlgoExpert/SystemsExpert',
     url: 'https://www.algoexpert.io/',
     length: '-',
   },
   {
-    logo: 'TreeHouse',
+    logo: 'treehouse',
     title: 'Web Design Track',
     url: 'https://teamtreehouse.com/tracks/web-design',
     length: '35 hrs',
