@@ -25,13 +25,6 @@ export const courses = [
   {
     status: 'complete',
     logo: 'wesbos',
-    title: 'Learn Redux',
-    url: 'https://learnredux.com/',
-    length: '2.5 hrs',
-  },
-  {
-    status: 'complete',
-    logo: 'wesbos',
     title: 'Learn Node',
     url: 'https://learnnode.com/',
     length: '9.5 hrs',
