@@ -8,7 +8,7 @@ export const courses = [
     length: '5 hrs',
   },
   {
-    status: 'inProgress',
+    status: 'complete',
     logo: 'treehouse',
     title: 'PHP TechDegree',
     url: 'https://teamtreehouse.com/techdegree/php-development',
