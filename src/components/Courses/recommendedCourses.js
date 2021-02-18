@@ -119,6 +119,12 @@ export const otherCourses = [
   },
   {
     logo: 'ztm',
+    title: "TypeScript: The Complete Developer's Guide",
+    url: 'https://academy.zerotomastery.io/p/learn-typescript',
+    length: '24.5',
+  },
+  {
+    logo: 'ztm',
     title: 'Complete React Native',
     url: 'https://academy.zerotomastery.io/p/learn-react-native',
     length: '? hrs',
