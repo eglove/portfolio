@@ -112,12 +112,6 @@ export const otherCourses = [
     length: '13.5 hrs',
   },
   {
-    logo: 'wesbos',
-    title: 'FullStack Advanced React & GraphQL (2021 Update)',
-    url: 'https://advancedreact.com/',
-    length: '18 hrs',
-  },
-  {
     logo: 'ztm',
     title: "TypeScript: The Complete Developer's Guide",
     url: 'https://academy.zerotomastery.io/p/learn-typescript',
