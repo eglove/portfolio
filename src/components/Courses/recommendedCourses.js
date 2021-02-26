@@ -121,13 +121,19 @@ export const otherCourses = [
     logo: 'ztm',
     title: 'Complete React Native',
     url: 'https://academy.zerotomastery.io/p/learn-react-native',
-    length: '? hrs',
+    length: '27.5 hrs',
   },
   {
     logo: 'educative',
     title: 'Grokking Data Science',
     url: 'https://www.educative.io/courses/grokking-data-science',
     length: '10 hrs',
+  },
+  {
+    logo: 'ztm',
+    title: 'TensorFlow Developer Certificate',
+    url: 'https://academy.zerotomastery.io/p/learn-tensorflow',
+    length: '30 hrs',
   },
   {
     logo: 'rtc',
