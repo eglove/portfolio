@@ -19,7 +19,7 @@ export default function CoursePage() {
         description="Personally recommended development courses."
       />
       <h1>Recommended Courses</h1>
-      <p>Last Update: Feb. 21, 2021</p>
+      <p>Last Update: Feb. 25, 2021</p>
       <CourseList courses={courses} otherCourses={otherCourses} />
     </PageWrapper>
   );
